@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 app.get('http://localhost:1337/page1', function (req, res) {
-res.sendFile('index.html', {root: './' })
+res.sendFile('page1.html', {root: './' })
 })
 app.listen(1337, () => console.log('Marist Chatter listening on port 1337!'));
 
